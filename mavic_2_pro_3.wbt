@@ -1,0 +1,353 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/Road.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Pavement.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/buildings/protos/Windmill.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/buildings/protos/SmallManor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/tesla/TeslaModel3Simple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/trees/protos/Pine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/RoundTable.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/toyota/ToyotaPriusSimple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/StraightRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/CurvedRoadSegment.proto"
+
+WorldInfo {
+  info [
+    "This demonstration shows a DJI Mavic 2 PRO flying over a rural area."
+    "After the drone has taken off, you can control it with the keyboard of your computer."
+  ]
+  title "DJI Mavic 2 PRO demo"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+}
+Viewpoint {
+  orientation -0.46830112525548334 0.012982364054734352 0.8834735504292126 3.1398052351243355
+  position 113.32263850243766 -195.03080478340533 15.839821703346338
+  near 0.2
+  follow "Mavic 2 PRO"
+  followSmoothness 0.2
+}
+TexturedBackground {
+  luminosity 3
+}
+TexturedBackgroundLight {
+}
+Floor {
+  name "floor(1)"
+  size 400 400
+  tileSize 6 6
+  appearance SandyGround {
+  }
+}
+ToyotaPriusSimple {
+  translation 86.22 -197.53 0.5
+  rotation 0 0 1 1.5707996938995747
+  name "vehicle(8)"
+}
+Floor {
+  name "floor(3)"
+  size 400 400
+  tileSize 6 6
+  appearance SandyGround {
+  }
+}
+ToyotaPriusSimple {
+  translation 83.61 -197.59 0.5
+  rotation 0 0 1 1.5707996938995747
+  name "vehicle(9)"
+}
+TeslaModel3Simple {
+  translation 96.28 -194.63 0.41
+  rotation 0 0 1 -1.5708003061004252
+  name "vehicle(5)"
+}
+TeslaModel3Simple {
+  translation 93.82 -194.6 0.41
+  rotation 0 0 1 -1.5708003061004252
+  name "vehicle(6)"
+}
+TeslaModel3Simple {
+  translation 91.36 -194.64 0.41
+  rotation 0 0 1 -1.5708003061004252
+  name "vehicle(7)"
+}
+Floor {
+  name "floor(2)"
+  size 400 400
+  tileSize 6 6
+  appearance SandyGround {
+  }
+}
+CurvedRoadSegment {
+  translation 120 -186 0.05
+  rotation 0 0 1 3.141592653589793
+  name "road(9)"
+  leftBorder FALSE
+}
+CurvedRoadSegment {
+  translation 120 -186 0.05
+  rotation 0 0 1 1.5707896938995747
+  name "road(10)"
+}
+TeslaModel3Simple {
+  translation -1.6605 2.79796 0.51
+  rotation 0 0 -1 5.92017e-06
+  name "vehicle(2)"
+}
+RoundTable {
+  translation -25.07 13.49 0.13
+  name "round table(17)"
+}
+RoundTable {
+  translation -26.36 13.49 0.13
+  name "round table(16)"
+}
+RoundTable {
+  translation -25.1 12.2 0.13
+  name "round table(15)"
+}
+RoundTable {
+  translation -26.23 12.2 0.13
+  name "round table(14)"
+}
+RoundTable {
+  translation -24.89 7.07 0.13
+  name "round table(13)"
+}
+RoundTable {
+  translation -24.91 8.26 0.13
+  name "round table(11)"
+}
+RoundTable {
+  translation -24.92 11 0.13
+  name "round table(9)"
+}
+RoundTable {
+  translation -26.12 9.53 0.13
+  name "round table(7)"
+}
+RoundTable {
+  translation -24.95 9.53 0.13
+  name "round table(8)"
+}
+RoundTable {
+  translation -27.44 9.53 0.13
+  name "round table(2)"
+}
+RoundTable {
+  translation -27.44 11 0.13
+  name "round table(3)"
+}
+RoundTable {
+  translation -27.44 13.49 0.13
+  name "round table(4)"
+}
+RoundTable {
+  translation -27.44 8.26 0.13
+  name "round table(5)"
+}
+RoundTable {
+  translation -26.02 8.26 0.13
+  name "round table(10)"
+}
+RoundTable {
+  translation -27.44 7.07 0.13
+  name "round table(6)"
+}
+RoundTable {
+  translation -26.1 7.07 0.13
+  name "round table(12)"
+}
+Road {
+  translation -43.8 9.2 0.01
+  rotation 0 0 1 -0.3926996938995747
+  width 3
+  numberOfLanes 1
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    100 0 0
+    200 200 0
+  ]
+  splineSubdivision 8
+  appearance Pavement {
+    type "black stone"
+  }
+}
+Windmill {
+  translation -43.8656 -19.8433 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+}
+Windmill {
+  translation -44.258 -27.3356 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(1)"
+}
+Windmill {
+  translation -46.2448 30.573 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(2)"
+}
+Windmill {
+  translation -38.75 23.4 0
+  name "windmill(3)"
+}
+SmallManor {
+  translation -50.35 11.25 0
+  rotation 0 0 -1 0.392394
+}
+RoundTable {
+  translation -27.44 12.2 0.13
+  name "round table(1)"
+}
+TeslaModel3Simple {
+  translation 98.71 -194.51 0.31
+  rotation 0 0 1 -1.5708003061004252
+}
+TeslaModel3Simple {
+  translation -1.7605 -2.14204 0.41
+  rotation 0 0 -1 5.92017e-06
+  name "vehicle(1)"
+}
+Pine {
+  translation -14.0083 -14.4828 0
+  rotation 0 0 1 2.61799
+}
+Pine {
+  translation -19.6195 -24.3783 0
+  rotation 0 0 1 2.87979
+  name "pine tree(1)"
+}
+Pine {
+  translation -22.0129 6.20205 0
+  name "pine tree(3)"
+}
+Pine {
+  translation -10.6926 -25.1339 0
+  name "pine tree(4)"
+}
+Pine {
+  translation -14.3441 14.5621 0
+  name "pine tree(5)"
+}
+Pine {
+  translation -26.6328 -7.1707 0
+  name "pine tree(6)"
+}
+Pine {
+  translation -9.37029 14.0209 0
+  rotation 0 0 1 -2.6179953071795863
+  name "pine tree(2)"
+}
+Mavic2Pro {
+  hidden position_0_0 3.425444878950752e-05
+  hidden rotation_5 0 0 1 3.425444761230285e-05
+  hidden position_5_0 -1.2178672684189444e-09
+  hidden position_6_0 -1.7975710262099565e-07
+  hidden rotation_7 -1 0 0 1.7881393432617193e-07
+  translation 107.085 -195.993 0.299495
+  rotation 0.034810194209732644 0.0014880197524853743 0.9993928337627287 3.0960756132800116
+  controller "mavic2pro_python"
+  cameraSlot [
+    Camera {
+      width 400
+      height 240
+      near 0.2
+    }
+  ]
+}
+RoundTable {
+  translation -26.09 11 0.13
+}
+ToyotaPriusSimple {
+  translation 88.74 -197.48 0.4
+  rotation 0 0 1 1.5707996938995747
+  name "vehicle(3)"
+}
+ToyotaPriusSimple {
+  translation -1.47 5.48 0.5
+  name "vehicle(4)"
+}
+StraightRoadSegment {
+  translation 190 -196 0.05
+  name "road(1)"
+}
+StraightRoadSegment {
+  translation 180 -196 0.05
+  name "road(2)"
+}
+StraightRoadSegment {
+  translation 170 -196 0.05
+  name "road(3)"
+}
+StraightRoadSegment {
+  translation 150 -196 0.05
+  name "road(4)"
+}
+StraightRoadSegment {
+  translation 160 -196 0.05
+  name "road(5)"
+}
+StraightRoadSegment {
+  translation 140 -196 0.05
+  name "road(6)"
+}
+StraightRoadSegment {
+  translation 130 -196 0.05
+  name "road(7)"
+}
+StraightRoadSegment {
+  translation 120 -196 0.05
+  name "road(8)"
+}
+StraightRoadSegment {
+  translation 110 -196 0.05
+  name "road(19)"
+  leftBorder FALSE
+}
+StraightRoadSegment {
+  translation 100 -196 0.05
+  name "road(20)"
+  leftBorder FALSE
+}
+StraightRoadSegment {
+  translation 120 -176 0.05
+  name "road(11)"
+}
+StraightRoadSegment {
+  translation 130 -176 0.05
+  name "road(12)"
+}
+StraightRoadSegment {
+  translation 140 -176 0.05
+  name "road(13)"
+}
+StraightRoadSegment {
+  translation 150 -176 0.05
+  name "road(14)"
+}
+StraightRoadSegment {
+  translation 160 -176 0.05
+  name "road(15)"
+}
+StraightRoadSegment {
+  translation 170 -176 0.05
+  name "road(16)"
+}
+StraightRoadSegment {
+  translation 180 -176 0.05
+  name "road(17)"
+}
+StraightRoadSegment {
+  translation 190 -176 0.05
+  name "road(18)"
+}
